@@ -9,9 +9,9 @@
         </li>				
         <li class="topmenu"><?php echo anchor(current_url(),img('prod.png').' Produits','style="height:18px;line-height:18px;"') ?>
             <ul>
-            <li><a href="#">Nouveau produit disponible</a></li>
-            <li><a href="#">Modifier un produit</a></li>
-            <li><a href="#">Retirer un produit de la vente</a></li>
+            <li><a href="Categorie/Add">Nouveau produit disponible</a></li>
+            <li><a href="Categorie/Update">Modifier un produit</a></li>
+            <li><a href="Categorie/Delete">Retirer un produit de la vente</a></li>
             </ul>
         </li>
         <li class="topmenu"><?php echo anchor(current_url(),img('categ.png').' Catégories','style="height:18px;line-height:18px;"') ?>

@@ -39,7 +39,12 @@ class Stock extends CI_Controller {
     
     public function AccesStat()
     {
+        $this->load->view('common/header.php');
+        $this->load->view('common/nav');
         
+        $this->load->view('StatStock');
+        
+        $this->load->view('common/footer');
     }
     
     public function UpdatePosStock(){        
