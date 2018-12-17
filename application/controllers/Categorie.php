@@ -46,4 +46,30 @@ class Categorie extends CI_Controller {
         
         $this->load->view('common/footer');
     }
+    
+    public function Ajout()
+    {
+        $libel = $this->input->post('lib');
+        $addCateg = new Categorie;
+        $addCateg -> libCateg = $libel;
+        $addCateg -> save();
+        redirect('Home');
+    }
+    
+    public function Modif()
+    {
+        $id = $this->input->post('id');
+        $lib = $this->input->post('lib');
+        Categ::where('idCateg',$id)
+                ->update(['libCateg'=>$lib]);
+        redirect('Home');
+    }
+    
+    public function Enleve()
+    {
+        $id = $this->input->post('id');
+        $obj = Categorie::find($id);
+        $obj->delete();
+        redirect('Home');
+    }
 }
