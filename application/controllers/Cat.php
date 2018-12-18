@@ -1,7 +1,7 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Categorie extends CI_Controller {
+class Cat extends CI_Controller {
     
     public function __construct()
     {
@@ -10,11 +10,6 @@ class Categorie extends CI_Controller {
         if ($this->session->admin != TRUE) {
             redirect('/Login');
         }
-    }
-    
-    public function index()
-    {
-        
     }
     
     public function Add()
@@ -51,16 +46,18 @@ class Categorie extends CI_Controller {
     {
         $libel = $this->input->post('lib');
         $addCateg = new Categorie;
-        $addCateg -> libCateg = $libel;
-        $addCateg -> save();
-        redirect('Home');
+        
+       $addCateg->libCateg = $libel;
+        $addCateg->save();
+        
+       redirect('Home');
     }
     
     public function Modif()
     {
         $id = $this->input->post('id');
         $lib = $this->input->post('lib');
-        Categ::where('idCateg',$id)
+        Categorie::where('idCateg',$id)
                 ->update(['libCateg'=>$lib]);
         redirect('Home');
     }

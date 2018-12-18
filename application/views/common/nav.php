@@ -16,9 +16,9 @@
         </li>
         <li class="topmenu"><?php echo anchor(current_url(),img('categ.png').' Catégories','style="height:18px;line-height:18px;"') ?>
             <ul>
-            <li><a href="Categorie/Add">Ajouter</a></li>
-            <li><a href="Categorie/Update">Modifier</a></li>
-            <li><a href="Categorie/Delete">Supprimer</a></li>
+            <li><a href="Cat/Add">Ajouter</a></li>
+            <li><a href="Cat/Update">Modifier</a></li>
+            <li><a href="Cat/Delete">Supprimer</a></li>
             </ul>
         </li>
         <li class="toplast">
