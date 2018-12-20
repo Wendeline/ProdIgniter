@@ -9,7 +9,7 @@
         <?php
         echo form_open('Cat/Enleve');
         echo form_fieldset('Supression d\'une catégorie');
-            echo form_label('Numéro que vous voulez supprimé','id');
+            echo form_label('Numéro à supprimer','id');
             echo form_input('id');
             echo '<br>';
             echo form_submit('valid','Valider');

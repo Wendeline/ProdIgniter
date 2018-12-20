@@ -66,7 +66,20 @@ class Cat extends CI_Controller {
     {
         $id = $this->input->post('id');
         $obj = Categorie::find($id);
-        $obj->delete();
-        redirect('Home');
+        $lesProduits = $obj->produits;
+        $nbProd = count($lesProduits);
+        if ($nbProd ==0){
+            $obj->delete();
+            redirect('Home');
+        }else{
+            $this->load->view('common/header.php');
+            $this->load->view('common/nav');
+            
+            echo '<p style="color:black;">Il existe encore des produits de cette catégorie, suppression impossible</p>';
+            $this->load->view('DeleteCateg_form');
+
+            $this->load->view('common/footer');
+       
+        }
     }
 }
