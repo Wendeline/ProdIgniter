@@ -13,6 +13,16 @@
                     echo $produit->nomProd;
                     echo "<br>";
                     echo "<b>".$produit->qteStock."</b> <i>en stock</i>";
+                    echo "<br>";
+                    echo "<br>";
+                    echo '<a class="btn" href="'. base_url('Prod/Update/'. $produit->refProd) .'">Modifier</a>';
+                    echo "<br>";
+                    echo "<br>";
+                    if ($produit->qteStock == 0) {
+                      echo '<a class="btn" href="'. base_url('Prod/Delete/'. $produit->refProd) .'">Supprimer</a>';
+                      echo "<br>";
+                      echo "<br>";
+                    }
                     echo "</td>";
                     $cpt++;
                     if ($cpt%3==0) {
