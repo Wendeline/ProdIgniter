@@ -65,11 +65,10 @@ class Prod extends CI_Controller {
 
     public function Ajout()
     {
-  //     $img = $this->input->post('img');
+  //     $img = $this->input->post('image');
   //     //Sauvegarde de l'image dans le dossier assets/images/prod
-  //     $config['upload_path'] = '../../assets/images/prod/';
+  //     $config['upload_path'] = 'assets/images/prod/';
   //     $config['allowed_types'] = 'jpg';
-  //     $config['max_size'] = '200';
   //     $config['max_width'] = '200';
   //     $config['max_height'] = '200';
   //     $this->load->library('upload', $config);
