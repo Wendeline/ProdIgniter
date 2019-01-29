@@ -1,11 +1,11 @@
 <nav>
     <ul id="menu" class="topmenu">
-        <li class="topfirst"><?php echo anchor(current_url(),img('stock.png').' Gestion du stock','style="height:18px;line-height:18px;"') ?>
-            <ul>
+        <li class="topfirst"><?php echo anchor(base_url('Stock/AccesStat'),img('stock.png').' Gestion du stock','style="height:18px;line-height:18px;"') ?>
+            <!-- <ul>
             <li><a href="<?php echo base_url('Stock/EntreeDeStock')?>">Saisir une entrée en stock</a></li>
             <li><a href="<?php echo base_url('Stock/SortieDeStock')?>">Saisir une sortie de stock</a></li>
             <li><a href="<?php echo base_url('Stock/AccesStat')?>">Statistiques</a></li>
-            </ul>
+            </ul> -->
         </li>
         <li class="topmenu"><?php echo anchor(current_url(),img('prod.png').' Produits','style="height:18px;line-height:18px;"') ?>
             <ul>
@@ -14,12 +14,7 @@
             <li><a href="<?php echo base_url('Home/aSupp')?>">Retirer un produit de la vente</a></li>
             </ul>
         </li>
-        <li class="topmenu"><?php echo anchor(current_url(),img('categ.png').' Catégories','style="height:18px;line-height:18px;"') ?>
-            <ul>
-            <li><a href="<?php echo base_url('Cat/Add')?>">Ajouter</a></li>
-            <li><a href="<?php echo base_url('Cat/Update')?>">Modifier</a></li>
-            <li><a href="<?php echo base_url('Cat/Delete')?>">Supprimer</a></li>
-            </ul>
+        <li class="topmenu"><?php echo anchor(base_url('Cat'),img('categ.png').' Catégories','style="height:18px;line-height:18px;"') ?>
         </li>
         <li class="toplast">
             <?php echo anchor('login/disconnect',img('switch.png').' Déconnecter','style="height:18px;line-height:18px;"') ?>

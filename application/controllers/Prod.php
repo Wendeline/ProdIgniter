@@ -107,13 +107,13 @@ class Prod extends CI_Controller {
             //Ajout du produit dans la base de données
             $addProd = new Produit();
 
-            $addProd->refProd = $this->input->post('ref');
-            $addProd->nomProd = $this->input->post('nom');
-            $addProd->descProd = $this->input->post('desc');
-            $addProd->PUHTProd = $this->input->post('prix');
+            $addProd->refProd       = $this->input->post('ref');
+            $addProd->nomProd       = $this->input->post('nom');
+            $addProd->descProd      = $this->input->post('desc');
+            $addProd->PUHTProd      = $this->input->post('prix');
             $addProd->dateAjoutProd = Date("Y-m-d");
-            $addProd->qteStock = 0;
-            $addProd->categProd = $this->input->post('cat');
+            $addProd->qteStock      = 0;
+            $addProd->categProd     = $this->input->post('cat');
             $addProd->save();
 
             redirect('Home');
