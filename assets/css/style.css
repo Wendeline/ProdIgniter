@@ -133,7 +133,7 @@ input[type=radio] {
 /* SUBMIT et RESET */
 input[type=submit], input[type=reset] {
     width:100px;
-    margin-left:160px;
+    /* margin-left:160px; */
     box-shadow:1px 2px 2px #B35C00;
     cursor:pointer;
     color:#663400;
