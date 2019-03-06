@@ -10,17 +10,19 @@ class Login extends CI_Controller {
     
     public function index()
     {
-        $this->load->view('common/header.php');
         if ($this->session->admin == TRUE) {
             redirect('Home');
          }
          else {
-            
+            $this->load->view('common/header');
+           
+
             $data['titre'] = "Identification";
-            $data['soustitre'] = "Pour accéder à ProdIgniter, merci de saisir vos identifiants";
+            $data['soustitre'] = "Pour accéder à ProdIgniter, merci de saisir vos identifiants.";
             $this->load->view('login_form',$data);
+            $this->load->view('common/footer');
+            
          }
-         $this->load->view('common/footer.php');
     }
         
     public function check_admin()
@@ -53,13 +55,8 @@ class Login extends CI_Controller {
     
     public function disconnect()
     {
-        $sessiondata = array(
-                   'nom'  => "",
-                   'admin'=> FALSE
-               );
-            $this->session->set_userdata($sessiondata);
-        
-        $this->session->set_userdata("");
+        $array_items = array('nom', 'admin');
+        $this->session->unset_userdata($array_items);
         redirect('Login');
     }
 }

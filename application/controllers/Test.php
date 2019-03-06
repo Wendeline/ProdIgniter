@@ -10,11 +10,12 @@ class Test extends CI_Controller {
     
     public function index()
     {
-        $lesProduits = Categorie::find(9)->produits;
-        foreach ($lesProduits as $produit){
-            echo $produit->nomProd . "<br>";
-        }
+        $this->load->model('Categorie');
 
+        //var_dump(Categorie::all());
+        var_dump(Produit::find('ALHIBZINAT')->categorie->libCateg);
+        //var_dump(Categorie::find(1)->produits);
     }
-    
+        
+   
 }

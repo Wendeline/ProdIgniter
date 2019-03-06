@@ -8,21 +8,11 @@
                 echo "<tr>";
                 foreach ($donnees as $produit) {
                     echo "<td width='30%'>";
-                    echo img('prod/'.$produit->refProd.'.jpg','height="150" width="150"');
-                    echo "<br>";
-                    echo $produit->nomProd;
-                    echo "<br>";
-                    echo "<b>".$produit->qteStock."</b> <i>en stock</i>";
-                    echo "<br>";
-                    echo "<br>";
-                    echo '<a class="btn" href="'. base_url('Prod/Update/'. $produit->refProd) .'">Modifier</a>';
-                    echo "<br>";
-                    echo "<br>";
-                    if ($produit->qteStock == 0) {
-                      echo '<a class="btn" href="'. base_url('Prod/Delete/'. $produit->refProd) .'">Supprimer</a>';
-                      echo "<br>";
-                      echo "<br>";
-                    }
+                        echo img('prod/'.$produit->refProd.'.jpg','height="150" width="150"');
+                        echo "<br>";
+                        echo $produit->nomProd;
+                        echo "<br>";
+                        echo "<b>".$produit->qteStock."</b> <i>en stock</i>";
                     echo "</td>";
                     $cpt++;
                     if ($cpt%3==0) {

@@ -1,28 +1,25 @@
-<nav>
-    <ul id="menu" class="topmenu">
-        <li class="topfirst"><?php echo anchor(current_url(),img('stock.png').' Gestion du stock','style="height:18px;line-height:18px;"') ?>
-            <ul>
-            <li><a href="<?php echo base_url('Stock/EntreeDeStock')?>">Saisir une entrée en stock</a></li>
-            <li><a href="<?php echo base_url('Stock/SortieDeStock')?>">Saisir une sortie de stock</a></li>
-            <li><a href="<?php echo base_url('Stock/AccesStat')?>">Statistiques</a></li>
-            </ul>
-        </li>
-        <li class="topmenu"><?php echo anchor(current_url(),img('prod.png').' Produits','style="height:18px;line-height:18px;"') ?>
-            <ul>
-            <li><a href="<?php echo base_url('Prod/Add')?>">Nouveau produit disponible</a></li>
-            <li><a href="<?php echo base_url('Prod/Update')?>">Modifier un produit</a></li>
-            <li><a href="<?php echo base_url('Home/aSupp')?>">Retirer un produit de la vente</a></li>
-            </ul>
-        </li>
-        <li class="topmenu"><?php echo anchor(current_url(),img('categ.png').' Catégories','style="height:18px;line-height:18px;"') ?>
-            <ul>
-            <li><a href="<?php echo base_url('Cat/Add')?>">Ajouter</a></li>
-            <li><a href="<?php echo base_url('Cat/Update')?>">Modifier</a></li>
-            <li><a href="<?php echo base_url('Cat/Delete')?>">Supprimer</a></li>
-            </ul>
-        </li>
-        <li class="toplast">
-            <?php echo anchor('login/disconnect',img('switch.png').' Déconnecter','style="height:18px;line-height:18px;"') ?>
-        </li>
-    </ul>
+<nav class="grey nav-extended scrollspy" role="navigation" id="nav">
+
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Ferrier Cirill</a>
+        <div class="right">
+            <a href="<?php echo base_url('Home/lang/fr'); ?>" class="btn <?php echo $a = ($lang == "fr") ? 'btnactive' : '' ?>">FR</a>
+            <a href="<?php echo base_url('Home/lang/en'); ?>" class="btn <?php echo $a = ($lang == "fr") ? '' : 'btnactive' ?>">EN</a>
+        </div>
+    </div>
 </nav>
+
+<!--
+<div id="LOADER">
+    <div class="row up">
+        <p class="center">
+        </p>
+    </div>
+    <div id="LOAD" >
+        <h1 class="rubberBand">Loading ...</h1>
+    </div>
+    <div class="row down">
+        <p class="center">Web site create by Ferrier Cirill<br><a href="https://twitter.com/aypierremc/status/1030950127354171392?lang=fr">#YOUSK2 ¯\_(ツ)_/¯</a>
+        </p>
+    </div>
+</div> -->

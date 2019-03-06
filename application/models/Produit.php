@@ -5,12 +5,16 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Produit extends Eloquent
 {
-    protected $primaryKey = 'refProd';
-    public $incrementing = false;
-    protected $keyType = 'string';
-    public $timestamps = false;
-    
-    public function categorie(){
-        return $this->belongsTo('Categorie','categProd','idCateg');
+    protected   $primaryKey    = 'idRef';
+    protected   $keyType       = 'string';
+    public      $incrementing  = false;
+    public      $timestamps    = false;
+
+    public function Categoriesous() {
+    	return $this->belongsToMany('Categoriesous', 'prodtocategs', 'idRef', 'idCategS');
+    }
+
+    public function TailleProduit() {
+    	return $this->belongsToMany('TailleProduit', 'prodtotailleprixes', 'idRef', 'idTailleProd');
     }
 }
