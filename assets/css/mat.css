@@ -1,24 +1,9 @@
-/* <?php
-   header('content-type: text/css');
-   ob_start('ob_gzhandler');
-   header('Cache-Control: max-age=31536000, must-revalidate');
-?> */
 
 /*!
  * BASED on : Materialize v1.0.0-rc.2;
  * Updated by : Asheart communication;
  * All right : Ferrier cirill ;
- * #f79027;
  */
-
-.fatyColorOrange {
-    color: #f79027;
-}
-
-.fatyColorGrey {
-    color: #9b9b9b;
-}
-
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -996,7 +981,7 @@
 }
 
 .teal {
-  background-color: #41003c !important;
+  background-color: #009688 !important;
 }
 
 .teal-text {
@@ -1032,12 +1017,11 @@
 }
 
 .teal-text.text-lighten-2 {
-  color: #ffffff !important;
+  color: #4db6ac !important;
 }
 
 .teal.lighten-1 {
-  /* background-color: #26a69a !important; */
-  background-image: linear-gradient(140deg, #41003c 0%, #5e1084 100%);
+  background-color: #26a69a !important;
 }
 
 .teal-text.text-lighten-1 {
@@ -2053,10 +2037,7 @@
 }
 
 .grey {
-  background-color: #41003c !important;
-  background-color: #402a2a;
-  /* background-image: linear-gradient(60deg, #41003c 0%, #5e1084 100%); */
-  box-shadow: 0px 9px 12px 0px #450e5f78;
+  background-color: #9e9e9e !important;
 }
 
 .grey-text {
@@ -2184,7 +2165,6 @@ html {
 body {
   margin: 0;
   /* background: #ff6a00; */
-  height: -webkit-fill-available;
 }
 
 /**
@@ -2234,11 +2214,10 @@ figure {
  */
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
-  color: black;
   overflow: visible;
   /* 2 */
 }
@@ -2464,7 +2443,7 @@ button:-moz-focusring,
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 1.35em 2.75em 2.625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
@@ -2475,7 +2454,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -2483,11 +2462,10 @@ legend {
   /* 1 */
   max-width: 100%;
   /* 1 */
-  padding: 0em 1.5em;
+  padding: 0;
   /* 3 */
   white-space: normal;
   /* 1 */
-  color: #000;
 }
 
 /**
@@ -2710,8 +2688,8 @@ a {
 
 blockquote {
   margin: 20px 0;
-  padding-right: 1.5rem;
-  border-right: 5px solid #f79027;
+  padding-left: 1.5rem;
+  border-left: 5px solid #f58f27;
 }
 
 i {
@@ -2758,7 +2736,7 @@ video.responsive-video {
   height: 30px;
 }
 
-.pagination li  {
+.pagination li a {
   color: #444;
   display: inline-block;
   font-size: 1.2rem;
@@ -2771,7 +2749,7 @@ video.responsive-video {
 }
 
 .pagination li.active {
-  background-color: #5e5e5e;
+  background-color: #ee6e73;
 }
 
 .pagination li.disabled a {
@@ -2850,8 +2828,6 @@ video.responsive-video {
   right: 0;
   bottom: 0;
   z-index: -1;
-  /* background-color: aliceblue; */
-  /* visibility: visible; */
 }
 
 .parallax-container .parallax img {
@@ -2862,9 +2838,9 @@ video.responsive-video {
   min-width: 100%;
   min-height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .pin-top, .pin-bottom {
@@ -2970,15 +2946,9 @@ ul.staggered-list li {
 }
 
 .page-footer {
-  /* padding-top: 20px; */
+  padding-top: 20px;
   color: #fff;
-  background-color: #42023d;
-  background-image: url("http://localhost:81/PortFolioIngiter/assets/images/bg2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 44%;
-  margin-top: 0px;
+  background-color: #434343;
 }
 
 .page-footer .footer-copyright {
@@ -2998,7 +2968,7 @@ ul.staggered-list li {
   justify-content: space-between;
   padding: 10px 0px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(87, 12, 113, 0.73);
+  background-color: rgba(51, 51, 51, 0.39);
 }
 
 table, th, td {
@@ -3047,7 +3017,6 @@ td, th {
   text-align: left;
   vertical-align: middle;
   border-radius: 2px;
-  color: #fff;
 }
 
 @media only screen and (max-width: 992px) {
@@ -3365,7 +3334,6 @@ td, th {
 
 .right {
   float: right !important;
-  text-align: right;
 }
 
 .no-select, input[type=range],
@@ -3378,7 +3346,6 @@ input[type=range] + .thumb {
 
 .circle {
   border-radius: 50%;
-  width: 5vw;
 }
 
 .center-block {
@@ -3478,7 +3445,7 @@ table span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 85%;
+    width: 70%;
   }
 }
 
@@ -4306,8 +4273,8 @@ table span.badge {
 }
 
 nav {
-  color: #ffec02;
-  background-color: #232323;
+  color: #de7226;
+  background-color: rgb(15, 15, 15);
   /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
   width: 100%;
   height: 56px;
@@ -4532,8 +4499,7 @@ html {
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: normal;
-  color: #000000;
-  background-color: #41003c !important;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 @media only screen and (min-width: 0) {
@@ -4551,14 +4517,12 @@ html {
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 15px;
-    background: #661871;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.3;
-  font-family: 'Lobster', cursive;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -5153,10 +5117,9 @@ small {
 
 .tabs .indicator {
   position: absolute;
-  display: none;
   bottom: 0;
   height: 2px;
-  background-color: #09080800 !important;
+  background-color: #090808;
   will-change: left, right;
 }
 
@@ -5300,9 +5263,9 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #ffffff !important;
+  color: #ffffff;
   font-weight: 500;
-  background-color: #41003c;
+  background-color: #5e5e5e;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
@@ -5312,7 +5275,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #5e1084;
+  background-color: #b95c1b;
 }
 
 .btn-floating {
@@ -5321,10 +5284,10 @@ small {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  /* width: -webkit-fill-available; */
-  /* height: 50px; */
-  /* line-height: 2vw; */
-  padding: 0px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
   background-color: #26a69a;
   border-radius: 50%;
   -webkit-transition: background-color .3s;
@@ -5624,7 +5587,7 @@ button.btn-floating {
 }
 
 .dropdown-content li:hover, .dropdown-content li.active {
-  /* background-color: #eee; */
+  background-color: #eee;
 }
 
 .dropdown-content li:focus {
@@ -5752,7 +5715,6 @@ body.keyboard-focused .dropdown-content li:focus {
   font-size: inherit;
   text-transform: inherit;
   background: none;
-  color: #fff;
 }
 
 .waves-effect img {
@@ -5808,8 +5770,8 @@ body.keyboard-focused .dropdown-content li:focus {
   right: 0;
   background-color: #fafafa;
   padding: 0;
-  max-height: 80%;
-  width: 75%;
+  max-height: 70%;
+  width: 55%;
   margin: auto;
   overflow-y: auto;
   border-radius: 2px;
@@ -5895,9 +5857,9 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .collapsible {
-  border-top: 1px solid #5e1084;
-  border-right: 1px solid #5e1084;
-  border-left: 1px solid #5e1084;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
   margin: 0.5rem 0 1rem 0;
 }
 
@@ -5910,8 +5872,8 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-tap-highlight-color: transparent;
   line-height: 1.5;
   padding: 1rem;
-  background-color: #390846;
-  border-bottom: 1px solid #8b17aa;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
 .collapsible-header:focus {
@@ -5932,9 +5894,9 @@ body.keyboard-focused .dropdown-content li:focus {
 
 .collapsible-body {
   display: none;
-  border-bottom: 1px solid #390846;
+  border-bottom: 1px solid #ddd;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 2rem;
 }
 
@@ -6005,11 +5967,11 @@ body.keyboard-focused .dropdown-content li:focus {
   height: 32px;
   font-size: 13px;
   font-weight: 500;
-  color: rgb(73, 73, 73);
+  color: rgba(0, 0, 0, 0.6);
   line-height: 32px;
   padding: 0 12px;
   border-radius: 16px;
-  background-color: #dcdcdc;
+  background-color: #e4e4e4;
   margin-bottom: 5px;
   margin-right: 5px;
 }
@@ -6103,12 +6065,10 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
   -webkit-backface-visibility: hidden;
-  background: #fff;
 }
 
 .materialboxed:hover:not(.active) {
-  opacity: 0.8;
-  /* border-radius: 10px; */
+  opacity: .8;
 }
 
 .materialboxed.active {
@@ -6122,7 +6082,7 @@ body.keyboard-focused .dropdown-content li:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #dfdfdf;
+  background-color: #292929;
   z-index: 1000;
   will-change: opacity;
 }
@@ -6837,12 +6797,12 @@ textarea.materialize-textarea {
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:before,
 [type="radio"].with-gap:checked + span:after {
-  border: 2px solid #5e5e5e;
+  border: 2px solid #26a69a;
 }
 
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:after {
-  background-color: #f79027;
+  background-color: #26a69a;
 }
 
 [type="radio"]:checked + span:after {
@@ -6964,8 +6924,8 @@ textarea.materialize-textarea {
   height: 22px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #f79027;
-  border-bottom: 2px solid #f79027;
+  border-right: 2px solid #f58f27;
+  border-bottom: 2px solid #f58f27;
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
   -webkit-backface-visibility: hidden;
@@ -7255,7 +7215,7 @@ select {
   bottom: 0;
   margin: auto 0;
   z-index: 0;
-  fill: #f79027;
+  fill: #f58f27;
 }
 
 .select-wrapper + label {
@@ -7398,7 +7358,7 @@ input[type=range] + .thumb {
 
 input[type=range] {
   position: relative;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
@@ -7421,9 +7381,9 @@ input[type=range] + .thumb {
   background-color: #26a69a;
   margin-left: 7px;
   -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 input[type=range] + .thumb .value {
@@ -7481,10 +7441,8 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range] {
   /* fix for FF unable to apply focus style bug  */
-  border: 10px solid #261a3800;
+  border: 1px solid white;
   /*required for proper track sizing in FF*/
-  color: white;
-  background: #c2c0c200;
 }
 
 input[type=range]::-moz-range-track {
@@ -9159,29 +9117,6 @@ input[type=range]::-ms-thumb {
     top: -16px;
   }
 
-  .navCateg {
-    font-size: 1.2vw;
-  }
-
-  .paddingNavCateg {
-    padding: 0em 2em !important;
-  }
-
-  #dropdownNavCateg{
-    height: max-content !important;
-    padding: 2em 1em !important;
-  }
-
-  .paddingNavCateg p {
-    display: inline;
-    margin: 2em;
-  }
-
-
-  .navCategBorderCol {
-    border: 1px solid #000;
-  }
-
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\     FONT     \\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -9269,7 +9204,7 @@ input[type=range]::-ms-thumb {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
   .btnTagRecherche {
-    background: #f79027;
+    background: #de7226;
     margin: 0.5rem;
   }
 
@@ -9277,29 +9212,6 @@ input[type=range]::-ms-thumb {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\      PRODUIT       \\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
-    .containerProduit {
-      margin: 0 auto;
-      max-width: 1700px !important;
-      width: 85% !important;
-      margin-bottom: 4vw !important;
-    }
-
-    @media only screen and (min-width: 601px) {
-      .containerProduit {
-        width: 85%;
-      }
-    }
-
-    @media only screen and (min-width: 993px) {
-      .containerProduit {
-        width: 70%;
-      }
-    }
-
-  .btnAdminProduit {
-      width: 100%;
-  }
 
   .produit {
     background: #ececec;
@@ -9318,10 +9230,6 @@ input[type=range]::-ms-thumb {
     overflow: visible;
   }
 
-  .descProduit {
-      font-weight: 200;
-  }
-
   #choixCouleurAffichage {
     border: dashed 0.2vw #a9a9a9;
     position: relative;
@@ -9331,228 +9239,9 @@ input[type=range]::-ms-thumb {
   }
 
   .noMargeBottom {
-    margin-bottom: 0em;
-    height: fit-content;
+    margin-bottom: auto;
   }
 
   .noMargeTop {
     margin-top: 0em;
-    transform: skewY(-5deg);
   }
-
-/* PANNIER */
-    .smallbtn {
-        margin-right: 15px;
-        width: 30px;
-        height: 30px;
-        vertical-align: initial;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
-    .descProduit {
-        font-weight: 200;
-    }
-
-    .small-font {
-        font-size: 2.0vw !important;
-        font-weight: 100;
-        line-height: 2vw;
-    }
-
-    .imgPannier {
-        width: 5vw;
-    }
-
-    /* Custom Stylesheet */
-    /**
-     * Use this file to override Materialize files so you can update
-     * the core Materialize files in the future
-     *
-     * Made By MaterializeCSS.com
-     */
-
-    nav ul a,
-    nav .brand-logo {
-      color: #ffffff;
-      font-weight: 900;
-      letter-spacing: 3px;
-      font-family: 'Major Mono Display', monospace;
-      -webkit-animation: color 10s infinite;
-      -moz-animation: color 10s infinite;
-      animation: color 10s infinite;
-    }
-
-    i {
-      font-family: 'Roboto', serif;
-    }
-
-
-    p {
-      line-height: 2rem;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    .sidenav-trigger {
-      color: #26a69a;
-    }
-
-    .parallax-container {
-      min-height: -webkit-fill-available;
-      line-height: 0;
-      height: auto;
-      color: rgba(255, 255, 255, 0.9);
-    }
-      .parallax-container .section {
-        height: 100%;
-        height: -webkit-fill-available;
-        background: #28004b99;
-      }
-
-    @media only screen and (max-width : 992px) {
-      .parallax-container .section {
-        position: absolute;
-        top: 40%;
-      }
-      #index-banner .section {
-        top: 0%;
-        width: 100%;
-      }
-    }
-
-    @media only screen and (max-width : 600px) {
-      #index-banner .section {
-        top: 0;
-      }
-    }
-
-    .icon-block {
-      padding: 0 15px;
-    }
-    .icon-block .material-icons {
-      font-size: inherit;
-    }
-
-    footer.page-footer {
-      margin: 0;
-    }
-
-
-    .modalBtn {
-      background: #26a69a;
-      color: #fff;
-      padding: 1em !important;
-    }
-
-
-    /* MODIF */
-
-    nav a {
-        color: #000;
-    }
-
-    .icon-card-i {
-      border-top: solid 1px #afafaf;
-      padding-top: 0.5em;
-      margin-top: 0.5em;
-    }
-
-    .icon-card-i i {
-      margin-right: 10px;
-      color: #26a69a;
-    }
-
-    .page-modal-info i {
-      margin-right: 10px;
-      color: #26a69a;
-    }
-
-    .page-modal-info p {
-      color: #333;
-    }
-
-    .page-modal-info a {
-      text-decoration: underline;
-    }
-
-    .iconsProject {
-        top: 5px;
-        position: relative;
-    }
-
-    .projetsBorderPAD {
-        margin-top: 1.5em;
-    }
-
-    .chip a {
-
-    border-bottom: dashed 1.2px !important;
-    }
-
-    .dateD {
-        margin-bottom: 0.6em;
-    }
-
-    .projectPhoto {
-        padding: 4em 1em;
-    }
-
-    .paddingTop {
-        padding-top: 2em;
-        height: fit-content;
-    }
-
-    .imgParfaite {
-    height: -webkit-fill-available;
-    background-size: cover !important;
-    }
-
-    .footerDiv {
-        background-color: #580d74a6;
-        margin-top: 0em;
-    }
-
-
-    /* Header */
-.large-header {
-	position: relative;
-	width: 100%;
-	background: #333;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	z-index: 1;
-}
-
-#large-header {
-	/*background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');*/
-}
-
-.main-title {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	color: #f9f1e9;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-}
-
-.demo-1 .main-title {
-	text-transform: uppercase;
-	font-size: 4.2em;
-	letter-spacing: 0.1em;
-}
-
-.main-title .thin {
-	font-weight: 200;
-}
-
-
-/* p */
-
-p {
-    color: white;
-}

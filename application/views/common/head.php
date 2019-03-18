@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Ferrier Cirill</title>
+    <title><?php echo $page; ?></title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="<?php echo css_url('materialize');?>"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo css_url('mat');?>"  media="screen,projection"/>
     <!-- <link type="text/css" rel="stylesheet" href="assets/css/nouislider.css"> -->
 
     <!-- fontawesome -->
@@ -28,13 +28,10 @@
 
     <script type="text/javascript" href="<?php echo js_url('nouislider');?>"></script>
     <script
-      src="http://code.jquery.com/jquery-3.3.1.js"
+      src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
 
 </head>
 
 <body>
-  <?php
-      $this->load->view('common/nav');
-  ?>

@@ -1,25 +1,29 @@
-<nav class="grey nav-extended scrollspy" role="navigation" id="nav">
+<nav class="nav-extended scrollspy row" role="navigation" id="nav">
+    <!-- <div class="col s2">
+        <a href="index.php">
+            <img src="img/logo.svg" class="brand-logo">
+        </a>
+    </div> -->
 
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Ferrier Cirill</a>
-        <div class="right">
-            <a href="<?php echo base_url('Home/lang/fr'); ?>" class="btn <?php echo $a = ($lang == "fr") ? 'btnactive' : '' ?>">FR</a>
-            <a href="<?php echo base_url('Home/lang/en'); ?>" class="btn <?php echo $a = ($lang == "fr") ? '' : 'btnactive' ?>">EN</a>
+    <div class="col s12">
+        <div class="container">
+            <div class="nav-wrapper container col s12">
+
+                <a id="logo-container" href="index.php" data-target="nav-mobile" class="brand-logo elephant">Faty Concept
+                </a>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <!-- <?php $this->load->view('common/head', $data); ?> -->
+                </ul>
+            </div>
+            <div class="nav-content  col s12">
+                <ul class="tabs tabs-transparent hide-on-med-and-down">
+                    <!-- <?php include 'assets/php/linkNav.php'?> -->
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
-<!--
-<div id="LOADER">
-    <div class="row up">
-        <p class="center">
-        </p>
-    </div>
-    <div id="LOAD" >
-        <h1 class="rubberBand">Loading ...</h1>
-    </div>
-    <div class="row down">
-        <p class="center">Web site create by Ferrier Cirill<br><a href="https://twitter.com/aypierremc/status/1030950127354171392?lang=fr">#YOUSK2 ¯\_(ツ)_/¯</a>
-        </p>
-    </div>
-</div> -->
+<body>

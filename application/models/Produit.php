@@ -17,4 +17,8 @@ class Produit extends Eloquent
     public function TailleProduit() {
     	return $this->belongsToMany('TailleProduit', 'prodtotailleprixes', 'idRef', 'idTailleProd');
     }
+
+    public function TypeProduits() {
+        return $this->belongsTo('TypeProduit', 'typeproduits', 'idTypeProd', 'idTypeProd');
+    }
 }
